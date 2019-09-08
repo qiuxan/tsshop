@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>@yield('title', 'Laravel Shop') - Touch Screen Shop</title>
-    <!--  -->
+    <title>@yield('title', 'Touch Screen Shop') - Touch Screen Shop</title>
+    <!-- Style -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
@@ -18,7 +18,7 @@
     </div>
     @include('layouts._footer')
 </div>
-<!-- JS 脚本 -->
+<!-- JS Script -->
 <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>
