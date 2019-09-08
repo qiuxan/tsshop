@@ -17,8 +17,27 @@
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav navbar-right">
                 <!-- Authentication Links -->
-                <li class="nav-item"><a class="nav-link" href="#">Log in</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
+                @guest
+                     <li class="nav-item"><a class="nav-link" href="{{route('login')}}">Log in</a></li>
+                     <li class="nav-item"><a class="nav-link" href="{{route('register')}}">Register</a></li>
+
+
+                @else
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="https://i.pravatar.cc/150?u=fake@pravatar.com" class="img-responsive img-circle" width="30px" height="30px">
+                            {{ Auth::user()->name }}
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" id="logout" href="#"
+                               onclick="event.preventDefault();document.getElementById('logout-form').submit();">Log Out</a>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                {{ csrf_field() }}
+                            </form>
+                        </div>
+                    </li>
+                @endguest
+
             </ul>
         </div>
     </div>

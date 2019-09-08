@@ -1,0 +1,10 @@
+Hash: 8f7dee84d23a307cd223
+Version: webpack 4.39.3
+Time: 78ms
+Built at: 2019-09-08 03:36:45
+
+WARNING in configuration
+The 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.
+You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/
+
+ERROR in Entry module not found: Error: Can't resolve '-' in '/home/vagrant/code/ts-shop'
