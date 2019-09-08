@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title', 'Touch Screen Shop') - Touch Screen Shop</title>
     <!-- Style -->
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
 <div id="app" class="{{ route_class() }}-page">
@@ -19,6 +19,6 @@
     @include('layouts._footer')
 </div>
 <!-- JS Script -->
-<script src="{{ mix('js/app.js') }}"></script>
+<script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
