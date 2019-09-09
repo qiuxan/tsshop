@@ -36,4 +36,21 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
+    /**
+     * rewrite showLoginFormfunction
+     * @url https://laravel-china.org/topics/16682?#reply73955
+     * @param \App\Http\Requests\Request $request
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function showLoginForm(Request $request)
+    {
+        if ($request->session()->has('url.intended')) {
+            if (strpos($request->session()->get('url.intended'), '/admin')) {
+                $request->session()->forget('url.intended');
+            }
+        }
+        return view('auth.login');
+    }
+
 }
