@@ -32,18 +32,18 @@
           <entry key="js" value="2" />
           <entry key="json" value="5" />
           <entry key="md" value="1" />
-          <entry key="php" value="80" />
+          <entry key="php" value="82" />
           <entry key="scss" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="3" />
-          <entry key="Blade" value="21" />
+          <entry key="Blade" value="22" />
           <entry key="JSON" value="5" />
           <entry key="JavaScript" value="2" />
           <entry key="Markdown" value="1" />
-          <entry key="PHP" value="59" />
+          <entry key="PHP" value="60" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="SCSS" value="1" />
         </counts>
@@ -53,17 +53,17 @@
           <entry key="env" value="9" />
           <entry key="js" value="14" />
           <entry key="json" value="11" />
-          <entry key="php" value="2674" />
+          <entry key="php" value="2695" />
           <entry key="scss" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="9" />
-          <entry key="Blade" value="1119" />
+          <entry key="Blade" value="1123" />
           <entry key="JSON" value="11" />
           <entry key="JavaScript" value="14" />
-          <entry key="PHP" value="1555" />
+          <entry key="PHP" value="1572" />
           <entry key="SCSS" value="6" />
         </counts>
       </usages-collector>
@@ -83,11 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-              <folding>
-                <element signature="e#41#77#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="132">
+              <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -109,8 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/encore/laravel-admin/src/Controllers/AuthController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="713">
-              <caret line="170" column="3" selection-start-line="170" selection-start-column="3" selection-end-line="170" selection-end-column="3" />
+            <state relative-caret-position="565">
+              <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
               <folding>
                 <element signature="e#44#75#0#PHP" expanded="true" />
               </folding>
@@ -119,13 +116,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vendor/encore/laravel-admin/resources/views/login.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="706">
+              <caret line="45" column="73" selection-start-line="45" selection-start-column="73" selection-end-line="45" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/AuthController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="654">
-              <caret line="63" column="34" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
-              <folding>
-                <element signature="e#40#62#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="88">
+              <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -216,9 +219,9 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/app/Admin/Controllers/ExampleController.php" />
-        <option value="$PROJECT_DIR$/app/Admin/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/vendor/encore/laravel-admin/src/Controllers/AuthController.php" />
         <option value="$PROJECT_DIR$/app/Admin/Controllers/AuthController.php" />
+        <option value="$PROJECT_DIR$/app/Admin/Controllers/HomeController.php" />
       </list>
     </option>
   </component>
@@ -329,9 +332,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="846" />
+    <option name="x" value="32" />
     <option name="y" value="55" />
-    <option name="width" value="1682" />
+    <option name="width" value="2496" />
     <option name="height" value="1314" />
   </component>
   <component name="ProjectView">
@@ -372,7 +375,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Encore\Admin\Layout\Column&#9;null&#9;null&#10;admin/auth/login&#9;null&#9;null&#10;showLoginForm&#9;null&#9;null&#10;LoginController&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/Auth/LoginController.php&#10;cre&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/user_addresses/create_and_edit.blade.php&#10;index&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/user_addresses/index.blade.php&#10;web&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/routes/web.php&#10;we&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/routes/web.php&#10;address&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/UserAddressesController.php&#10;heade&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/layouts/_header.blade.php&#10;UserAdd&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/database/factories/UserAddressFactory.php&#10;controll&#9;null&#9;null&#10;User&#9;null&#9;null&#10;verify&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Middleware/VerifyCsrfToken.php&#10;user&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Models/User.php&#10;w&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/webpack.mix.js&#10;autoload&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="admin\login&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/vendor/encore/laravel-admin/resources/views/login.blade.php&#10;Encore\Admin\Layout\Column&#9;null&#9;null&#10;admin/auth/login&#9;null&#9;null&#10;showLoginForm&#9;null&#9;null&#10;LoginController&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/Auth/LoginController.php&#10;cre&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/user_addresses/create_and_edit.blade.php&#10;index&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/user_addresses/index.blade.php&#10;web&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/routes/web.php&#10;we&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/routes/web.php&#10;address&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/UserAddressesController.php&#10;heade&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/layouts/_header.blade.php&#10;UserAdd&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/database/factories/UserAddressFactory.php&#10;controll&#9;null&#9;null&#10;User&#9;null&#9;null&#10;verify&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Middleware/VerifyCsrfToken.php&#10;user&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Models/User.php&#10;w&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/webpack.mix.js&#10;autoload&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -408,18 +411,18 @@
       <updated>1567786917210</updated>
       <workItem from="1567786918443" duration="4210000" />
       <workItem from="1567846615462" duration="8956000" />
-      <workItem from="1567978285490" duration="24306000" />
+      <workItem from="1567978285490" duration="25427000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37472000" />
+    <option name="totallyTimeSpent" value="38593000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="846" y="55" width="1682" height="1314" extended-state="0" />
+    <frame x="32" y="55" width="2496" height="1314" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32987806" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10961695" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -448,9 +451,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -728,16 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="e#41#77#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/encore/laravel-admin/src/Layout/Column.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1043">
@@ -755,27 +745,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="45" column="6" lean-forward="true" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/ExampleController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/encore/laravel-admin/src/Controllers/AuthController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="170" column="3" selection-start-line="170" selection-start-column="3" selection-end-line="170" selection-end-column="3" />
-          <folding>
-            <element signature="e#44#75#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -793,13 +766,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1885">
+          <caret line="112" column="46" selection-start-line="112" selection-start-column="46" selection-end-line="112" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/AuthController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="63" column="34" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
+        <state relative-caret-position="88">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/encore/laravel-admin/src/Controllers/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
           <folding>
-            <element signature="e#40#62#0#PHP" expanded="true" />
+            <element signature="e#44#75#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/encore/laravel-admin/resources/views/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="45" column="73" selection-start-line="45" selection-start-column="73" selection-end-line="45" selection-end-column="73" />
         </state>
       </provider>
     </entry>
