@@ -19,6 +19,7 @@ class UserAddress extends Model
 
     public function getFullAddressAttribute()
     {
-        return "{$this->address}{$this->city}{$this->state}{$this->post_code}";
+        $state=strtoupper($this->state);
+        return "{$this->address}"." "."{$this->city}".", "."{$state}".", "." {$this->post_code}";
     }
 }
