@@ -24,8 +24,6 @@ class AuthController extends BaseAuthController
      */
     public function postLogin(Request $request)
     {
-
-//        dd(1);
         $credentials = $request->only([$this->username(), 'password']);
         $remember = $request->get('remember', false);
 
@@ -44,8 +42,41 @@ class AuthController extends BaseAuthController
         }
 
 
-        return redirect('admin')->withInput()->withErrors([
+        return back()->withInput()->withErrors([
             $this->username() => $this->getFailedLoginMessage(),
         ]);
+    }
+
+
+    /**
+     * Send the response after the user was authenticated.
+     *
+     * @param \Illuminate\Http\Request $request
+     *
+     * @return \Illuminate\Http\Response
+     */
+    protected function sendLoginResponse(Request $request)
+    {
+        admin_toastr(trans('admin.login_successful'));
+
+        $request->session()->regenerate();
+
+        return redirect('/admin');
+//        return redirect()->intended($this->redirectPath());
+    }
+
+
+    /**
+     * Get the post login redirect path.
+     *
+     * @return string
+     */
+    protected function redirectPath()
+    {
+        if (method_exists($this, 'redirectTo')) {
+            return $this->redirectTo();
+        }
+
+        return property_exists($this, 'redirectTo') ? $this->redirectTo : config('admin.route.prefix');
     }
 }
