@@ -29,8 +29,13 @@
                                 <td>{{ $address->post_code }}</td>
                                 <td>{{ $address->contact_phone }}</td>
                                 <td>
-                                    <button class="btn btn-primary">Edit</button>
-                                    <button class="btn btn-danger">Delete</button>
+                                    <a href="{{ route('user_addresses.edit', $address->id) }}" class="btn btn-primary">Edit</a>
+
+                                    <form action="{{route('user_addresses.destroy',$address->id)}}" method="POST" style="display: inline-block">
+                                        @method('delete')
+                                        {{csrf_field()}}
+                                        <button class="btn btn-danger">Delete</button>
+                                    </form>
                                 </td>
                             </tr>
                         @endforeach

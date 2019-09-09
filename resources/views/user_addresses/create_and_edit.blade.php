@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Add Shipping Address')
+@section('title', ($address->id?'Edit ':'Add').'Shipping Address')
 
 @section('content')
     <div class="row">
@@ -7,22 +7,28 @@
             <div class="card">
                 <div class="card-header">
                     <h2 class="text-center">
-                       Add Shipping Address
+                        {{$address->id?'Edit ':'Add'}} Shipping Address
                     </h2>
                 </div>
                 <div class="card-body">
 
-                @if (count($errors) > 0)
-                    <div class="alert alert-danger">
-                        <h4>Error：</h4>
-                        <ul>
-                            @foreach ($errors->all() as $error)
-                                <li><i class="glyphicon glyphicon-remove"></i> {{ $error }}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                @endif
+                    @if (count($errors) > 0)
+                        <div class="alert alert-danger">
+                            <h4>Error：</h4>
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li><i class="glyphicon glyphicon-remove"></i> {{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
+                    @if($address->id)
+                    <form class="form-horizontal" role="form" action="{{ route('user_addresses.update', ['user_address' => $address->id]) }}" method="post">
+                    @method('PUT')
+                    @else
                     <form class="form-horizontal" role="form" action="{{ route('user_addresses.store') }}" method="post">
+                    @endif
                         @csrf
 
 
@@ -69,7 +75,6 @@
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </div>
                         </div>
-
                     </form>
                 </div>
             </div>
