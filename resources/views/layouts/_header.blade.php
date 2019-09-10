@@ -35,6 +35,8 @@
                                 {{ csrf_field() }}
                             </form>
                             <a href="{{ route('user_addresses.index') }}" class="dropdown-item">Shipping Address</a>
+                            <a href="{{ route('products.favorites') }}" class="dropdown-item">My Favors</a>
+
 
                         </div>
                     </li>
