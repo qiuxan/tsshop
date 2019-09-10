@@ -53,7 +53,7 @@ class ProductsController extends Controller
     public function edit($id, Content $content)
     {
         return $content
-            ->header('编辑商品')
+            ->header('Edit Product')
             ->body($this->form()->edit($id));
     }
 
@@ -150,19 +150,14 @@ class ProductsController extends Controller
     {
         $form = new Form(new Product);
 
-        // 创建一个输入框，第一个参数 title 是模型的字段名，第二个参数是该字段描述
         $form->text('title', 'Product Title')->rules('required');
 
-        // 创建一个选择图片的框
         $form->image('image', 'Product Image')->rules('required|image');
 
-        // 创建一个富文本编辑器
         $form->editor('description', 'Description')->rules('required');
 
-        // 创建一组单选框
         $form->radio('on_sale', 'On Sale')->options(['1' => 'Yes', '0'=> 'No'])->default('0');
 
-        // 直接添加一对多的关联模型
         $form->hasMany('skus', 'SKU List', function (Form\NestedForm $form) {
             $form->text('title', 'SKU Title')->rules('required');
             $form->text('description', 'SKU Description')->rules('required');
@@ -170,7 +165,6 @@ class ProductsController extends Controller
             $form->text('stock', 'Stock')->rules('required|integer|min:0');
         });
 
-        // 定义事件回调，当模型即将保存时会触发这个回调
         $form->saving(function (Form $form) {
             $form->model()->price = collect($form->input('skus'))->where(Form::REMOVE_FLAG_NAME, 0)->min('price') ?: 0;
         });
