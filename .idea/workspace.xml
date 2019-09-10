@@ -3,14 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d8a53771-109d-4420-a80f-2f6eeb9a264e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Request.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserAddressesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserAddressesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/products/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user_addresses/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user_addresses/index.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,18 +35,18 @@
           <entry key="json" value="5" />
           <entry key="log" value="3" />
           <entry key="md" value="1" />
-          <entry key="php" value="131" />
+          <entry key="php" value="133" />
           <entry key="scss" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="4" />
-          <entry key="Blade" value="32" />
+          <entry key="Blade" value="33" />
           <entry key="JSON" value="5" />
           <entry key="JavaScript" value="3" />
           <entry key="Markdown" value="1" />
-          <entry key="PHP" value="99" />
+          <entry key="PHP" value="100" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="SCSS" value="5" />
         </counts>
@@ -61,17 +56,17 @@
           <entry key="env" value="14" />
           <entry key="js" value="15" />
           <entry key="json" value="11" />
-          <entry key="php" value="4883" />
+          <entry key="php" value="4986" />
           <entry key="scss" value="79" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="14" />
-          <entry key="Blade" value="1830" />
+          <entry key="Blade" value="1926" />
           <entry key="JSON" value="11" />
           <entry key="JavaScript" value="15" />
-          <entry key="PHP" value="3053" />
+          <entry key="PHP" value="3060" />
           <entry key="SCSS" value="79" />
         </counts>
       </usages-collector>
@@ -91,11 +86,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/products/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="109" column="37" selection-start-line="109" selection-start-column="37" selection-end-line="109" selection-end-column="37" />
+            <state relative-caret-position="506">
+              <caret line="17" column="127" lean-forward="true" selection-start-line="17" selection-start-column="127" selection-end-line="17" selection-end-column="127" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/user_addresses/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="282">
+              <caret line="59" column="40" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserAddressesController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="436">
+              <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
+              <folding>
+                <element signature="e#39#66#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -166,24 +182,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Requests/UserAddressRequest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_10_095219_create_user_favorite_products_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -195,8 +193,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>User</find>
-      <find>App/User</find>
       <find>App\User</find>
       <find>verify</find>
       <find>fillable</find>
@@ -225,6 +221,8 @@
       <find>coll</find>
       <find>show</find>
       <find>button</find>
+      <find>dest</find>
+      <find>csrf</find>
     </findStrings>
     <replaceStrings>
       <replace>app/Models/User.php</replace>
@@ -253,8 +251,6 @@
         <option value="$PROJECT_DIR$/app/Http/Requests/UserAddressRequest.php" />
         <option value="$PROJECT_DIR$/app/Models/UserAddress.php" />
         <option value="$PROJECT_DIR$/resources/views/user_addresses/create_and_edit.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/UserAddressesController.php" />
-        <option value="$PROJECT_DIR$/resources/views/user_addresses/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/app/Admin/Controllers/ExampleController.php" />
@@ -291,6 +287,8 @@
         <option value="$PROJECT_DIR$/resources/js/bootstrap.js" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" />
         <option value="$PROJECT_DIR$/resources/views/products/show.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UserAddressesController.php" />
+        <option value="$PROJECT_DIR$/resources/views/user_addresses/index.blade.php" />
       </list>
     </option>
   </component>
@@ -401,9 +399,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1174" />
+    <option name="x" value="1162" />
     <option name="y" value="55" />
-    <option name="width" value="1354" />
+    <option name="width" value="1366" />
     <option name="height" value="1314" />
   </component>
   <component name="ProjectView">
@@ -446,13 +444,14 @@
               <item name="ts-shop" type="b2602c69:ProjectViewProjectNode" />
               <item name="ts-shop" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ts-shop" type="b2602c69:ProjectViewProjectNode" />
               <item name="ts-shop" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="sass" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="user_addresses" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ts-shop" type="b2602c69:ProjectViewProjectNode" />
@@ -472,7 +471,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="sh&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/show.blade.php&#10;resour&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources&#10;PRODUCTS&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;USER.PHP&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Models/User.php&#10;show&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/show.blade.php&#10;WE&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/routes/web.php&#10;product c&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;user&#9;null&#9;null&#10;Product co&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;log&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/storage/logs&#10;products-show-page&#9;null&#9;null&#10;css&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/sass/app.scss&#10;we&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/routes/web.php&#10;Pr&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;product&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;pro&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;fac&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/database/factories&#10;inde&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/index.blade.php&#10;.en&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/.env&#10;admin\login&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/vendor/encore/laravel-admin/resources/views/login.blade.php&#10;Encore\Admin\Layout\Column&#9;null&#9;null&#10;admin/auth/login&#9;null&#9;null&#10;showLoginForm&#9;null&#9;null&#10;LoginController&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/Auth/LoginController.php&#10;cre&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/user_addresses/create_and_edit.blade.php&#10;index&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/user_addresses/index.blade.php&#10;web&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/routes/web.php&#10;address&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/UserAddressesController.php&#10;heade&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/layouts/_header.blade.php&#10;UserAdd&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/database/factories/UserAddressFactory.php&#10;controll&#9;null&#9;null&#10;User&#9;null&#9;null&#10;verify&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Middleware/VerifyCsrfToken.php&#10;w&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/webpack.mix.js&#10;autoload&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="userA&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/UserAddressesController.php&#10;sh&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/show.blade.php&#10;resour&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources&#10;PRODUCTS&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;USER.PHP&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Models/User.php&#10;show&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/show.blade.php&#10;WE&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/routes/web.php&#10;product c&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;user&#9;null&#9;null&#10;Product co&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;log&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/storage/logs&#10;products-show-page&#9;null&#9;null&#10;css&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/sass/app.scss&#10;we&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/routes/web.php&#10;Pr&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;product&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;pro&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;fac&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/database/factories&#10;inde&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/index.blade.php&#10;.en&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/.env&#10;admin\login&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/vendor/encore/laravel-admin/resources/views/login.blade.php&#10;Encore\Admin\Layout\Column&#9;null&#9;null&#10;admin/auth/login&#9;null&#9;null&#10;showLoginForm&#9;null&#9;null&#10;LoginController&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/Auth/LoginController.php&#10;cre&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/user_addresses/create_and_edit.blade.php&#10;index&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/user_addresses/index.blade.php&#10;web&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/routes/web.php&#10;address&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/UserAddressesController.php&#10;heade&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/layouts/_header.blade.php&#10;UserAdd&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/database/factories/UserAddressFactory.php&#10;controll&#9;null&#9;null&#10;User&#9;null&#9;null&#10;verify&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Middleware/VerifyCsrfToken.php&#10;w&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/webpack.mix.js&#10;autoload&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -508,15 +507,15 @@
       <updated>1567786917210</updated>
       <workItem from="1567786918443" duration="4210000" />
       <workItem from="1567846615462" duration="8956000" />
-      <workItem from="1567978285490" duration="51612000" />
+      <workItem from="1567978285490" duration="52673000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64778000" />
+    <option name="totallyTimeSpent" value="65839000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1174" y="55" width="1354" height="1314" extended-state="0" />
+    <frame x="1162" y="55" width="1366" height="1314" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
@@ -548,30 +547,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserAddressesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1021">
-          <caret line="60" column="54" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
-          <folding>
-            <element signature="e#39#66#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/user_addresses/create_and_edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user_addresses/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
-          <folding>
-            <element signature="e#1556#1585#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -929,8 +908,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/products/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="109" column="37" selection-start-line="109" selection-start-column="37" selection-end-line="109" selection-end-column="37" />
+        <state relative-caret-position="506">
+          <caret line="17" column="127" lean-forward="true" selection-start-line="17" selection-start-column="127" selection-end-line="17" selection-end-column="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserAddressesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
+          <folding>
+            <element signature="e#39#66#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user_addresses/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="59" column="40" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
         </state>
       </provider>
     </entry>

@@ -90,7 +90,7 @@
                 axios.post('{{ route('products.favor', ['product' => $product->id]) }}')
                     .then(function () {
                         swal('Success', '', 'success')
-                            .then(function () {  // 这里加了一个 then() 方法
+                            .then(function () {
                                 location.reload();
                             });
                     }, function(error) {

@@ -31,11 +31,13 @@
                                 <td>
                                     <a href="{{ route('user_addresses.edit', $address->id) }}" class="btn btn-primary">Edit</a>
 
-                                    <form action="{{route('user_addresses.destroy',$address->id)}}" method="POST" style="display: inline-block">
-                                        @method('delete')
-                                        {{csrf_field()}}
-                                        <button class="btn btn-danger">Delete</button>
-                                    </form>
+                                    <button class="btn btn-danger btn-del-address" type="button" data-id="{{ $address->id }}">Delete</button>
+
+                                    {{--<form action="{{route('user_addresses.destroy',$address->id)}}" method="POST" style="display: inline-block">--}}
+                                        {{--@method('delete')--}}
+                                        {{--{{csrf_field()}}--}}
+                                        {{--<button class="btn btn-danger">Delete</button>--}}
+                                    {{--</form>--}}
                                 </td>
                             </tr>
                         @endforeach
@@ -45,4 +47,29 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('scriptsAfterJs')
+    <script>
+        $(document).ready(function() {
+            $('.btn-del-address').click(function() {
+                var id = $(this).data('id');
+                swal({
+                    title: "Are you sure you want to delete this address？",
+                    icon: "warning",
+                    buttons: ['No', 'Yes'],
+                    dangerMode: true,
+                })
+                    .then(function(willDelete) {
+                        if (!willDelete) {
+                            return;
+                        }
+                        axios.delete('/user_addresses/' + id)
+                            .then(function () {
+                                location.reload();
+                            })
+                    });
+            });
+        });
+    </script>
 @endsection
