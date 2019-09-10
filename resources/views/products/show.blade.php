@@ -39,7 +39,16 @@
                             </div>
                             <div class="cart_amount"><label>Quantity</label><input type="text" class="form-control form-control-sm" value="1"><span>pcs</span><span class="stock"></span></div>
                             <div class="buttons">
-                                <button class="btn btn-success btn-favor">❤ Add to Collection</button>
+
+                                @if($favored)
+                                    <button class="btn btn-danger btn-disfavor">Unfavor</button>
+                                @else
+                                    <button class="btn btn-success btn-favor">❤ Favor</button>
+                                @endif
+
+
+
+
                                 <button class="btn btn-primary btn-add-to-cart">Add to Cart</button>
                             </div>
                         </div>
@@ -77,6 +86,34 @@
                 $('.product-info .price span').text($(this).data('price'));
                 $('.product-info .stock').text('Storage：' + $(this).data('stock') + ' pcs');
             });
+            $('.btn-favor').click(function () {
+                axios.post('{{ route('products.favor', ['product' => $product->id]) }}')
+                    .then(function () {
+                        swal('Success', '', 'success')
+                            .then(function () {  // 这里加了一个 then() 方法
+                                location.reload();
+                            });
+                    }, function(error) {
+                        if (error.response && error.response.status === 401) {
+                            swal('Please Login First', '', 'error');
+                        }  else if (error.response && error.response.data.msg) {
+                            swal(error.response.data.msg, '', 'error');
+                        }  else {
+                            swal('Internal Error', '', 'error');
+                        }
+                    });
+            });
+
+            $('.btn-disfavor').click(function () {
+                axios.delete('{{ route('products.disfavor', ['product' => $product->id]) }}')
+                    .then(function () {
+                        swal('Success', '', 'success')
+                            .then(function () {
+                                location.reload();
+                            });
+                    });
+            });
+
         });
     </script>
 @endsection
