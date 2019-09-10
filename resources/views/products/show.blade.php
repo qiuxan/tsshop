@@ -114,6 +114,42 @@
                     });
             });
 
+
+            //click add button
+            $('.btn-add-to-cart').click(function () {
+
+                //request the add api
+                axios.post('{{ route('cart.add') }}', {
+                    sku_id: $('label.active input[name=skus]').val(),
+                    amount: $('.cart_amount input').val(),
+                })
+                    .then(function () { //success
+                        swal('Item added', '', 'success');
+                    }, function (error) { // 请求失败执行此回调
+                        if (error.response.status === 401) {
+
+                            // http 状态码为 401 代表用户未登陆
+                            swal('Login first', '', 'error');
+
+                        } else if (error.response.status === 422) {
+
+                            // http status 422 enter wrong validate
+                            var html = '<div>';
+                            _.each(error.response.data.errors, function (errors) {
+                                _.each(errors, function (error) {
+                                    html += error+'<br>';
+                                })
+                            });
+                            html += '</div>';
+                            swal({content: $(html)[0], icon: 'error'})
+                        } else {
+
+                            //
+                            swal('system error', '', 'error');
+                        }
+                    })
+            });
+
         });
     </script>
 @endsection
