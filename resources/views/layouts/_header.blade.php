@@ -23,6 +23,11 @@
 
 
                 @else
+
+                    <li class="nav-item">
+                        <a class="nav-link mt-1" href="{{ route('cart.index') }}"><i class="fa fa-shopping-cart"></i></a>
+                    </li>
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img src="https://i.pravatar.cc/150?u=fake@pravatar.com" class="img-responsive img-circle" width="30px" height="30px">

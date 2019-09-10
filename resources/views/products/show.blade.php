@@ -124,11 +124,13 @@
                     amount: $('.cart_amount input').val(),
                 })
                     .then(function () { //success
-                        swal('Item added', '', 'success');
-                    }, function (error) { // 请求失败执行此回调
+                        swal('Item added', '', 'success')
+                            .then(function () {
+                                location.href = '{{ route('cart.index') }}';
+                            });
+                    }, function (error) { 
                         if (error.response.status === 401) {
-
-                            // http 状态码为 401 代表用户未登陆
+//status 401 means user did not log in
                             swal('Login first', '', 'error');
 
                         } else if (error.response.status === 422) {
