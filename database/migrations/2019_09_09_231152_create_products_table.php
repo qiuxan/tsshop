@@ -19,9 +19,9 @@ class CreateProductsTable extends Migration
             $table->text('description');
             $table->string('image');
             $table->boolean('on_sale')->default(true);
-            $table->float('rating');
-            $table->unsignedInteger('sold_count');
-            $table->unsignedInteger('review_count');
+            $table->float('rating')->default(5);
+            $table->unsignedInteger('sold_count')->default(0);
+            $table->unsignedInteger('review_count')->default(0);
             $table->decimal('price');
             $table->timestamps();
         });

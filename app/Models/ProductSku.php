@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class ProductSku extends Model
 {
     //
-    protected $fillable = ['id'];
+    protected $guarded = ['id'];
 
     public function product()
     {
