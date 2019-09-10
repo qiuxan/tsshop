@@ -27,8 +27,6 @@ class ProductsController extends Controller
             });
         }
 
-
-
         //if there is order parameter set. if so $order will be set to order parameter
         if ($order = $request->input('order', '')) {
             // check if the parameter is ending with_asc or _desc
@@ -38,7 +36,6 @@ class ProductsController extends Controller
                 }
             }
         }
-
         $products = $builder->paginate(16);
 
         return view('products.index', [
@@ -49,4 +46,15 @@ class ProductsController extends Controller
             ],
         ]);
     }
+
+
+    public function show(Product $product, Request $request)
+    {
+        if (!$product->on_sale) {
+            throw new \Exception('Product is not on sale!');
+        }
+
+        return view('products.show', ['product' => $product]);
+    }
+
 }
