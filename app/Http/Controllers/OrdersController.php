@@ -10,15 +10,18 @@ use Carbon\Carbon;
 use App\Jobs\CloseOrder;
 use Illuminate\Http\Request;
 
+use App\Services\CartService;
+
+
 
 
 class OrdersController extends Controller
 {
-    public function store(OrderRequest $request)
+    public function store(OrderRequest $request, CartService $cartService)
     {
         $user  = $request->user();
         //start an db
-        $order = \DB::transaction(function () use ($user, $request) {
+        $order = \DB::transaction(function () use ($user, $request,$cartService) {
             $address = UserAddress::find($request->input('address_id'));
             // update the last used date
             $address->update(['last_used_at' => Carbon::now()]);
@@ -61,8 +64,14 @@ class OrdersController extends Controller
             $order->update(['total_amount' => $totalAmount]);
 
             // remove the items from the chart
-            $skuIds = collect($items)->pluck('sku_id');
+
+            $skuIds = collect($request->input('items'))->pluck('sku_id')->all();
+            $cartService->remove($skuIds);
+
+//            $skuIds = collect($items)->pluck('sku_id');
+
             $user->cartItems()->whereIn('product_sku_id', $skuIds)->delete();
+
 
             return $order;
         });
