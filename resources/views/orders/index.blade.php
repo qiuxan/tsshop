@@ -49,7 +49,7 @@
                                                         <td rowspan="{{ count($order->items) }}" class="text-center">
                                                             @if($order->paid_at)
                                                                 @if($order->refund_status === \App\Models\Order::REFUND_STATUS_PENDING)
-                                                                    已支付
+                                                                   Paid
                                                                 @else
                                                                     {{ \App\Models\Order::$refundStatusMap[$order->refund_status] }}
                                                                 @endif
@@ -61,7 +61,7 @@
                                                                 Or the order will be closed
                                                             @endif
                                                         </td>
-                                                        <td rowspan="{{ count($order->items) }}" class="text-center"><a class="btn btn-primary btn-sm" href="">View Order</a></td>
+                                                        <td rowspan="{{ count($order->items) }}" class="text-center"><a class="btn btn-primary btn-sm" href="{{ route('orders.show', ['order' => $order->id]) }}">View Order</a></td>
                                                     @endif
                                                 </tr>
                                             @endforeach
