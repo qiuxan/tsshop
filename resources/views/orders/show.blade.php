@@ -49,7 +49,7 @@
                         <div class="order-summary text-right">
                             <div class="total-amount">
                                 <span>Amount：</span>
-                                <div class="value">￥{{ $order->total_amount }}</div>
+                                <div class="value">${{ $order->total_amount }}</div>
                             </div>
                             <div>
                                 <span>Order Status：</span>
