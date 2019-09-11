@@ -8,6 +8,8 @@ use App\Models\UserAddress;
 use App\Models\Order;
 use Carbon\Carbon;
 use App\Jobs\CloseOrder;
+use Illuminate\Http\Request;
+
 
 
 class OrdersController extends Controller
@@ -69,5 +71,18 @@ class OrdersController extends Controller
 
 
         return $order;
+    }
+
+
+    public function index(Request $request)
+    {
+        $orders = Order::query()
+            // use with function to avoid the n+1 problem
+            ->with(['items.product', 'items.productSku'])
+            ->where('user_id', $request->user()->id)
+            ->orderBy('created_at', 'desc')
+            ->paginate();
+
+        return view('orders.index', ['orders' => $orders]);
     }
 }
