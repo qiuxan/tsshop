@@ -56,6 +56,7 @@ class paypalController extends Controller
 
     public function pay()
     {
+        dd('h');
         $product = '1123';
         $price = 100;
         $shipping = 0;
