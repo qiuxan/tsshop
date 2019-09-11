@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8a53771-109d-4420-a80f-2f6eeb9a264e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserAddressesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserAddressesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/paypalController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ts-shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ts-shop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,44 +33,45 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="env" value="6" />
+          <entry key="cross-env" value="1" />
+          <entry key="env" value="7" />
           <entry key="gitignore" value="5" />
           <entry key="js" value="3" />
-          <entry key="json" value="5" />
+          <entry key="json" value="6" />
           <entry key="log" value="3" />
           <entry key="md" value="1" />
-          <entry key="php" value="182" />
+          <entry key="php" value="186" />
           <entry key="scss" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key=".env file" value="6" />
+          <entry key=".env file" value="7" />
           <entry key="Blade" value="43" />
-          <entry key="JSON" value="5" />
+          <entry key="JSON" value="6" />
           <entry key="JavaScript" value="3" />
           <entry key="Markdown" value="1" />
-          <entry key="PHP" value="139" />
-          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="PHP" value="143" />
+          <entry key="PLAIN_TEXT" value="9" />
           <entry key="SCSS" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="env" value="14" />
+          <entry key="env" value="46" />
           <entry key="js" value="15" />
-          <entry key="json" value="11" />
-          <entry key="php" value="7986" />
+          <entry key="json" value="31" />
+          <entry key="php" value="8280" />
           <entry key="scss" value="94" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key=".env file" value="14" />
+          <entry key=".env file" value="46" />
           <entry key="Blade" value="2876" />
-          <entry key="JSON" value="11" />
+          <entry key="JSON" value="31" />
           <entry key="JavaScript" value="15" />
-          <entry key="PHP" value="5110" />
+          <entry key="PHP" value="5404" />
           <entry key="SCSS" value="94" />
         </counts>
       </usages-collector>
@@ -72,63 +79,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Services/OrderService.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
-              <folding>
-                <element signature="e#32#52#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="641">
-              <caret line="38" column="42" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
-              <folding>
-                <element signature="e#7#389#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/OrdersController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-              <folding>
-                <element signature="e#40#75#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CartController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1213">
-              <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
-              <folding>
-                <element signature="e#39#76#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/cart/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/orders/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -168,13 +118,52 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserAddressesController.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="940">
-              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="726">
+              <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/paypalController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2519">
+              <caret line="135" selection-start-line="135" selection-end-line="135" />
               <folding>
-                <element signature="e#39#66#0#PHP" expanded="true" />
+                <element signature="e#40#68#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="491">
+              <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/paypal/rest-api-sdk-php/lib/PayPal/Api/Currency.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1430">
+              <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+              <folding>
+                <element signature="e#7#389#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -191,8 +180,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>admin/auth/login</find>
-      <find>route</find>
       <find>remember</find>
       <find>admin_base_path</find>
       <find>file</find>
@@ -221,6 +208,8 @@
       <find>index</find>
       <find>cartService</find>
       <find>00b5ad</find>
+      <find>prs</find>
+      <find>clientSecret</find>
     </findStrings>
     <replaceStrings>
       <replace>app/Models/User.php</replace>
@@ -236,8 +225,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2019_09_09_231152_create_products_table.php" />
-        <option value="$PROJECT_DIR$/app/Admin/bootstrap.php" />
         <option value="$PROJECT_DIR$/app/Admin/Controllers/ProductsController.php" />
         <option value="$PROJECT_DIR$/app/Admin/routes.php" />
         <option value="$PROJECT_DIR$/app/Models/Product.php" />
@@ -271,10 +258,8 @@
         <option value="$PROJECT_DIR$/app/Http/Requests/OrderRequest.php" />
         <option value="$PROJECT_DIR$/app/Models/ProductSku.php" />
         <option value="$PROJECT_DIR$/app/Jobs/CloseOrder.php" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/sass/app.scss" />
         <option value="$PROJECT_DIR$/resources/views/orders/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/cart/index.blade.php" />
@@ -287,6 +272,10 @@
         <option value="$PROJECT_DIR$/app/Policies/UserAddressPolicy.php" />
         <option value="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UserAddressesController.php" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/paypalController.php" />
       </list>
     </option>
   </component>
@@ -395,12 +384,13 @@
       <path value="$PROJECT_DIR$/vendor/encore/laravel-admin" />
       <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
       <path value="$PROJECT_DIR$/vendor/predis/predis" />
+      <path value="$PROJECT_DIR$/vendor/paypal/rest-api-sdk-php" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1296" />
+    <option name="x" value="729" />
     <option name="y" value="55" />
-    <option name="width" value="1232" />
+    <option name="width" value="1799" />
     <option name="height" value="1314" />
   </component>
   <component name="ProjectView">
@@ -425,7 +415,14 @@
               <item name="ts-shop" type="b2602c69:ProjectViewProjectNode" />
               <item name="ts-shop" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Policies" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ts-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ts-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ts-shop" type="b2602c69:ProjectViewProjectNode" />
@@ -451,6 +448,51 @@
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="orders" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ts-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ts-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ts-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ts-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="paypal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ts-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ts-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="paypal" type="462c0819:PsiDirectoryNode" />
+              <item name="rest-api-sdk-php" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ts-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ts-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="paypal" type="462c0819:PsiDirectoryNode" />
+              <item name="rest-api-sdk-php" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ts-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ts-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="paypal" type="462c0819:PsiDirectoryNode" />
+              <item name="rest-api-sdk-php" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="PayPal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ts-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ts-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="paypal" type="462c0819:PsiDirectoryNode" />
+              <item name="rest-api-sdk-php" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="PayPal" type="462c0819:PsiDirectoryNode" />
+              <item name="Api" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -458,7 +500,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Useraddress&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/UserAddressesController.php&#10;user&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Requests/UserAddressRequest.php&#10;UserAddressPolicy&#9;null&#9;null&#10;css&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/sass/app.scss&#10;orders&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;or&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;ca&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/CartController.php&#10;OrdersController&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;orderc&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;index&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/orders/index.blade.php&#10;show&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/orders/show.blade.php&#10;we&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/routes/web.php&#10;order&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;he&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/layouts/_header.blade.php&#10;CloseOrder&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Jobs/CloseOrder.php&#10;ind&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/cart/index.blade.php&#10;ProductSku&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Models/ProductSku.php&#10;OrderRequest&#9;null&#9;null&#10;cart&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/CartController.php&#10;sho&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/show.blade.php&#10;hea&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/layouts/_header.blade.php&#10;con&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/CartController.php&#10;sh&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/show.blade.php&#10;web&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/routes/web.php&#10;rout&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Admin/routes.php&#10;_header&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/layouts/_header.blade.php&#10;app&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/sass/app.scss&#10;favorites&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/favorites.blade.php&#10;produ&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;userA&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/UserAddressesController.php&#10;resour&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources&#10;PRODUCTS&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;USER.PHP&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Models/User.php&#10;WE&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/routes/web.php&#10;product c&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;Product co&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;log&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/storage/logs&#10;products-show-page&#9;null&#9;null&#10;Pr&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;product&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;pro&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;fac&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/database/factories&#10;inde&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/index.blade.php&#10;.en&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/.env&#10;admin\login&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/vendor/encore/laravel-admin/resources/views/login.blade.php&#10;Encore\Admin\Layout\Column&#9;null&#9;null&#10;admin/auth/login&#9;null&#9;null&#10;showLoginForm&#9;null&#9;null&#10;LoginController&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/Auth/LoginController.php&#10;cre&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/user_addresses/create_and_edit.blade.php" />
+    <property name="SearchEverywhereHistoryKey" value="web&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/routes/web.php&#10;Useraddress&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/UserAddressesController.php&#10;user&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Requests/UserAddressRequest.php&#10;UserAddressPolicy&#9;null&#9;null&#10;css&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/sass/app.scss&#10;orders&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;or&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;ca&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/CartController.php&#10;OrdersController&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;orderc&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;index&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/orders/index.blade.php&#10;show&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/orders/show.blade.php&#10;we&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/routes/web.php&#10;order&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;he&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/layouts/_header.blade.php&#10;CloseOrder&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Jobs/CloseOrder.php&#10;ind&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/cart/index.blade.php&#10;ProductSku&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Models/ProductSku.php&#10;OrderRequest&#9;null&#9;null&#10;cart&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/CartController.php&#10;sho&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/show.blade.php&#10;hea&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/layouts/_header.blade.php&#10;con&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/CartController.php&#10;sh&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/show.blade.php&#10;rout&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Admin/routes.php&#10;_header&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/layouts/_header.blade.php&#10;app&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/sass/app.scss&#10;favorites&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/favorites.blade.php&#10;produ&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;userA&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/UserAddressesController.php&#10;resour&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources&#10;PRODUCTS&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;USER.PHP&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Models/User.php&#10;WE&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/routes/web.php&#10;product c&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;Product co&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;log&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/storage/logs&#10;products-show-page&#9;null&#9;null&#10;Pr&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;product&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;pro&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;fac&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/database/factories&#10;inde&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/index.blade.php&#10;.en&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/.env&#10;admin\login&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/vendor/encore/laravel-admin/resources/views/login.blade.php&#10;Encore\Admin\Layout\Column&#9;null&#9;null&#10;admin/auth/login&#9;null&#9;null&#10;showLoginForm&#9;null&#9;null&#10;LoginController&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/Auth/LoginController.php&#10;cre&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/user_addresses/create_and_edit.blade.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -499,19 +541,19 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82865000" />
+    <option name="totallyTimeSpent" value="87064000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1296" y="55" width="1232" height="1314" extended-state="0" />
+    <frame x="729" y="55" width="1799" height="1314" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3436975" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.329539" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.109656304" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -534,38 +576,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2019-09-08.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-89" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2019-09-09.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2019-09-10.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="847" column="52" selection-start-line="847" selection-start-column="35" selection-end-line="847" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Exceptions/Handler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Exceptions/InvalidRequestException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="19" column="76" selection-start-line="19" selection-start-column="76" selection-end-line="19" selection-end-column="76" />
-          <folding>
-            <element signature="e#34#48#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -801,16 +811,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="38" column="42" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
-          <folding>
-            <element signature="e#7#389#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/Access/AuthorizesRequests.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -830,13 +830,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Services/CartService.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -903,6 +896,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserAddressesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="940">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="e#39#66#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/paypal/rest-api-sdk-php/lib/PayPal/Api/Payer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="704">
@@ -913,12 +923,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserAddressesController.php">
+    <entry file="file://$PROJECT_DIR$/cross-env">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="940">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="1430">
+          <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
           <folding>
-            <element signature="e#39#66#0#PHP" expanded="true" />
+            <element signature="e#7#389#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/paypal/rest-api-sdk-php/lib/PayPal/Api/Currency.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/paypalController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2519">
+          <caret line="135" selection-start-line="135" selection-end-line="135" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

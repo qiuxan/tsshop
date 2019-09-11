@@ -22,9 +22,11 @@
         "sass-loader": "^7.1.0",
         "vue": "^2.5.17",
         "vue-template-compiler": "^2.6.10"
+
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.10.2",
-        "sweetalert": "^2.1.2"
+        "sweetalert": "^2.1.2",
+        "psr/log":"1.0.0"
     }
 }
