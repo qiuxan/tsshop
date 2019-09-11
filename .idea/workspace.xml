@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8a53771-109d-4420-a80f-2f6eeb9a264e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrdersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrdersController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +32,7 @@
           <entry key="json" value="5" />
           <entry key="log" value="3" />
           <entry key="md" value="1" />
-          <entry key="php" value="175" />
+          <entry key="php" value="177" />
           <entry key="scss" value="7" />
         </counts>
       </usages-collector>
@@ -45,7 +43,7 @@
           <entry key="JSON" value="5" />
           <entry key="JavaScript" value="3" />
           <entry key="Markdown" value="1" />
-          <entry key="PHP" value="133" />
+          <entry key="PHP" value="135" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="SCSS" value="7" />
         </counts>
@@ -55,7 +53,7 @@
           <entry key="env" value="14" />
           <entry key="js" value="15" />
           <entry key="json" value="11" />
-          <entry key="php" value="7772" />
+          <entry key="php" value="7797" />
           <entry key="scss" value="94" />
         </counts>
       </usages-collector>
@@ -65,7 +63,7 @@
           <entry key="Blade" value="2873" />
           <entry key="JSON" value="11" />
           <entry key="JavaScript" value="15" />
-          <entry key="PHP" value="4899" />
+          <entry key="PHP" value="4924" />
           <entry key="SCSS" value="94" />
         </counts>
       </usages-collector>
@@ -74,19 +72,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Services/CartService.php">
+        <entry file="file://$PROJECT_DIR$/app/Services/OrderService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CartController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+            <state relative-caret-position="418">
+              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+              <folding>
+                <element signature="e#32#52#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,8 +86,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/OrdersController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-225">
-              <caret line="50" column="48" lean-forward="true" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
+            <state relative-caret-position="484">
+              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding>
                 <element signature="e#40#75#0#PHP" expanded="true" />
               </folding>
@@ -114,7 +106,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>prefix</find>
       <find>admin</find>
       <find>admin/auth/login</find>
       <find>route</find>
@@ -144,6 +135,7 @@
       <find>auth</find>
       <find>skuIds</find>
       <find>index</find>
+      <find>cartService</find>
     </findStrings>
     <replaceStrings>
       <replace>app/Models/User.php</replace>
@@ -159,7 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/config/filesystems.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_09_09_231919_create_product_skus_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_09_09_231152_create_products_table.php" />
         <option value="$PROJECT_DIR$/app/Admin/bootstrap.php" />
@@ -209,6 +200,7 @@
         <option value="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" />
         <option value="$PROJECT_DIR$/app/Services/CartService.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CartController.php" />
+        <option value="$PROJECT_DIR$/app/Services/OrderService.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/OrdersController.php" />
       </list>
     </option>
@@ -380,7 +372,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="or&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;ca&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/CartController.php&#10;OrdersController&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;orderc&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;index&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/orders/index.blade.php&#10;css&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/sass/app.scss&#10;show&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/orders/show.blade.php&#10;we&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/routes/web.php&#10;order&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;he&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/layouts/_header.blade.php&#10;CloseOrder&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Jobs/CloseOrder.php&#10;ind&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/cart/index.blade.php&#10;ProductSku&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Models/ProductSku.php&#10;OrderRequest&#9;null&#9;null&#10;cart&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/CartController.php&#10;sho&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/show.blade.php&#10;hea&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/layouts/_header.blade.php&#10;con&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/CartController.php&#10;sh&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/show.blade.php&#10;web&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/routes/web.php&#10;rout&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Admin/routes.php&#10;_header&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/layouts/_header.blade.php&#10;app&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/sass/app.scss&#10;favorites&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/favorites.blade.php&#10;produ&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;userA&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/UserAddressesController.php&#10;resour&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources&#10;PRODUCTS&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;USER.PHP&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Models/User.php&#10;WE&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/routes/web.php&#10;product c&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;user&#9;null&#9;null&#10;Product co&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;log&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/storage/logs&#10;products-show-page&#9;null&#9;null&#10;Pr&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;product&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;pro&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;fac&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/database/factories&#10;inde&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/index.blade.php&#10;.en&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/.env&#10;admin\login&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/vendor/encore/laravel-admin/resources/views/login.blade.php&#10;Encore\Admin\Layout\Column&#9;null&#9;null&#10;admin/auth/login&#9;null&#9;null&#10;showLoginForm&#9;null&#9;null&#10;LoginController&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/Auth/LoginController.php&#10;cre&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/user_addresses/create_and_edit.blade.php&#10;address&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/UserAddressesController.php&#10;heade&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/layouts/_header.blade.php&#10;UserAdd&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/database/factories/UserAddressFactory.php" />
+    <property name="SearchEverywhereHistoryKey" value="orders&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;or&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;ca&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/CartController.php&#10;OrdersController&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;orderc&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;index&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/orders/index.blade.php&#10;css&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/sass/app.scss&#10;show&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/orders/show.blade.php&#10;we&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/routes/web.php&#10;order&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;he&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/layouts/_header.blade.php&#10;CloseOrder&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Jobs/CloseOrder.php&#10;ind&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/cart/index.blade.php&#10;ProductSku&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Models/ProductSku.php&#10;OrderRequest&#9;null&#9;null&#10;cart&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/CartController.php&#10;sho&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/show.blade.php&#10;hea&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/layouts/_header.blade.php&#10;con&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/CartController.php&#10;sh&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/show.blade.php&#10;web&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/routes/web.php&#10;rout&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Admin/routes.php&#10;_header&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/layouts/_header.blade.php&#10;app&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/sass/app.scss&#10;favorites&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/favorites.blade.php&#10;produ&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;userA&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/UserAddressesController.php&#10;resour&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources&#10;PRODUCTS&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;USER.PHP&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Models/User.php&#10;WE&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/routes/web.php&#10;product c&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;user&#9;null&#9;null&#10;Product co&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;log&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/storage/logs&#10;products-show-page&#9;null&#9;null&#10;Pr&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;product&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;pro&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;fac&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/database/factories&#10;inde&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/index.blade.php&#10;.en&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/.env&#10;admin\login&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/vendor/encore/laravel-admin/resources/views/login.blade.php&#10;Encore\Admin\Layout\Column&#9;null&#9;null&#10;admin/auth/login&#9;null&#9;null&#10;showLoginForm&#9;null&#9;null&#10;LoginController&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/Auth/LoginController.php&#10;cre&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/user_addresses/create_and_edit.blade.php&#10;address&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/UserAddressesController.php&#10;heade&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/layouts/_header.blade.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -421,13 +413,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81263000" />
+    <option name="totallyTimeSpent" value="81567000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1296" y="55" width="1232" height="1314" extended-state="0" />
+    <frame x="559" y="55" width="1969" height="1314" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24285714" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14997405" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -456,9 +448,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/root.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/error.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -825,10 +814,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/OrderService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+          <folding>
+            <element signature="e#32#52#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/OrdersController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="50" column="48" lean-forward="true" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
+        <state relative-caret-position="484">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding>
             <element signature="e#40#75#0#PHP" expanded="true" />
           </folding>
