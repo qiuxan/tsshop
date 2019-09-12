@@ -48,7 +48,7 @@ Route::group(['middleware' => ['auth', 'verified']], function() {
 
 Auth::routes(['verify'=>true]);
 
-//Route::redirect('/', '/products')->name('root');
+Route::redirect('/', '/products')->name('root');
 Route::get('products', 'ProductsController@index')->name('products.index');
 
 Route::get('products', 'ProductsController@index')->name('products.index');
@@ -62,7 +62,7 @@ Route::get('products/{product}', 'ProductsController@show')->name('products.show
 //Route::get('paypal', 'paypalController@index');
 
 //payment form
-Route::get('/','PaymentController@index');
+Route::get('pay','PaymentController@index');
 
 // route for processing payment
 Route::post('paypal', 'PaymentController@payWithpaypal');
@@ -70,3 +70,4 @@ Route::post('paypal', 'PaymentController@payWithpaypal');
 // route for check status of the payment
 Route::get('status', 'PaymentController@getPaymentStatus');
 
+Route::get('/callback','PaymentController@callback');

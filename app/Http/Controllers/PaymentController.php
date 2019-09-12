@@ -24,6 +24,9 @@ use URL;
 class PaymentController extends Controller{
 
     private $_api_context;
+
+    const accept_url = 'http://tsshop.test/callback';//返回地址
+
     /**
      * Create a new controller instance.
      *
@@ -33,6 +36,8 @@ class PaymentController extends Controller{
     {
 
         /** PayPal api context **/
+
+
         $paypal_conf = config('paypal');
         $this->_api_context = new ApiContext(new OAuthTokenCredential(
                 $paypal_conf['client_id'],
@@ -47,6 +52,8 @@ class PaymentController extends Controller{
 
 //        dd(config('paypal'));
         return view('paywithpaypal');
+
+//        return view('welcome');
     }
     public function payWithpaypal(Request $request)
     {
@@ -57,7 +64,7 @@ class PaymentController extends Controller{
         $item_1 = new Item();
 
         $item_1->setName('Item 1') /** item name **/
-        ->setCurrency('USD')
+        ->setCurrency('AUD')
             ->setQuantity(1)
             ->setPrice($request->get('amount')); /** unit price **/
 
@@ -65,7 +72,7 @@ class PaymentController extends Controller{
         $item_list->setItems(array($item_1));
 
         $amount = new Amount();
-        $amount->setCurrency('USD')
+        $amount->setCurrency('AUD')
             ->setTotal($request->get('amount'));
 
         $transaction = new Transaction();
@@ -74,8 +81,10 @@ class PaymentController extends Controller{
             ->setDescription('Your transaction description');
 
         $redirect_urls = new RedirectUrls();
-        $redirect_urls->setReturnUrl(URL::to('status')) /** Specify return URL **/
-        ->setCancelUrl(URL::to('status'));
+//        $redirect_urls->setReturnUrl(URL::to('status')) /** Specify return URL **/
+//        ->setCancelUrl(URL::to('status'));
+
+        $redirect_urls->setReturnUrl(self::accept_url . '?success=true')->setCancelUrl(self::accept_url . '/?success=false');
 
         $payment = new Payment();
         $payment->setIntent('Sale')
@@ -124,10 +133,51 @@ class PaymentController extends Controller{
 
         }
 
-        \Session::put('error', 'Unknown error occurred');
+        Session::put('error', 'Unknown error occurred');
         return Redirect::to('/');
 
     }
+
+
+
+    public function Callback()
+    {
+
+//        dd(Session);
+        $payment_id = Session::get('paypal_payment_id');
+//        dd($payment_id);
+        dd($_GET);
+        $success = trim($_GET['success']);
+
+        if ($success == 'false' && !isset($_GET['paymentId']) && !isset($_GET['PayerID'])) {
+            echo '取消付款';die;
+        }
+
+        $paymentId = trim($_GET['paymentId']);
+        $PayerID = trim($_GET['PayerID']);
+
+        if (!isset($success, $paymentId, $PayerID)) {
+            echo '支付失败';die;
+        }
+
+        if ((bool)$_GET['success'] === 'false') {
+            echo  '支付失败，支付ID【' . $paymentId . '】,支付人ID【' . $PayerID . '】';die;
+        }
+
+        $payment = Payment::get($paymentId, $this->_api_context);
+
+        $execute = new PaymentExecution();
+
+        $execute->setPayerId($PayerID);
+
+        try {
+            $payment->execute($execute, $this->_api_context);
+        } catch (Exception $e) {
+            echo ',支付失败，支付ID【' . $paymentId . '】,支付人ID【' . $PayerID . '】';die;
+        }
+        echo '支付成功，支付ID【' . $paymentId . '】,支付人ID【' . $PayerID . '】';die;
+    }
+
 
     public function getPaymentStatus()
     {
@@ -161,6 +211,4 @@ class PaymentController extends Controller{
         return Redirect::to('/');
 
     }
-
-
 }

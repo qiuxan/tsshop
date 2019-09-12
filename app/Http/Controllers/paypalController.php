@@ -44,6 +44,8 @@ class PaymentController extends Controller
     {
         return view('paywithpaypal');
     }
+
+
     public function payWithpaypal(Request $request)
     {
 
@@ -53,7 +55,7 @@ class PaymentController extends Controller
         $item_1 = new Item();
 
         $item_1->setName('Item 1') /** item name **/
-        ->setCurrency('USD')
+        ->setCurrency('AUD')
             ->setQuantity(1)
             ->setPrice($request->get('amount')); /** unit price **/
 
@@ -130,6 +132,7 @@ class PaymentController extends Controller
         /** Get the payment ID before session clear **/
         $payment_id = Session::get('paypal_payment_id');
 
+
         /** clear the session payment ID **/
         Session::forget('paypal_payment_id');
         if (empty(Input::get('PayerID')) || empty(Input::get('token'))) {
@@ -157,5 +160,7 @@ class PaymentController extends Controller
         return Redirect::to('/');
 
     }
+
+
 
 }
