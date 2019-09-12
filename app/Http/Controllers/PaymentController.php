@@ -150,18 +150,18 @@ class PaymentController extends Controller{
         $success = trim($_GET['success']);
 
         if ($success == 'false' && !isset($_GET['paymentId']) && !isset($_GET['PayerID'])) {
-            echo '取消付款';die;
+            echo 'Cancel Payment';die;
         }
 
         $paymentId = trim($_GET['paymentId']);
         $PayerID = trim($_GET['PayerID']);
 
         if (!isset($success, $paymentId, $PayerID)) {
-            echo '支付失败';die;
+            echo 'Payment Failed';die;
         }
 
         if ((bool)$_GET['success'] === 'false') {
-            echo  '支付失败，支付ID【' . $paymentId . '】,支付人ID【' . $PayerID . '】';die;
+            echo  'Payment Failed，Payment ID: ' . $paymentId . ',PayerID:' . $PayerID;die;
         }
 
         $payment = Payment::get($paymentId, $this->_api_context);
@@ -173,9 +173,9 @@ class PaymentController extends Controller{
         try {
             $payment->execute($execute, $this->_api_context);
         } catch (Exception $e) {
-            echo ',支付失败，支付ID【' . $paymentId . '】,支付人ID【' . $PayerID . '】';die;
+            echo ',Payment Failed，Payment ID: ' . $paymentId . ',Payer ID' . $PayerID;die;
         }
-        echo '支付成功，支付ID【' . $paymentId . '】,支付人ID【' . $PayerID . '】';die;
+        echo 'Payment success Payment ID:' . $paymentId . '】,Payer ID' . $PayerID ;die;
     }
 
 
