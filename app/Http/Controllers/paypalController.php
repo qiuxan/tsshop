@@ -23,6 +23,8 @@ use PayPal\Api\PaymentExecution;
 class paypalController extends Controller
 {
 
+
+
     //
 
 //    public $clientId = $_ENV[''];//ID
@@ -133,5 +135,10 @@ class paypalController extends Controller
             echo ',Payment Fail，Payment ID【' . $paymentId . '】,Payer ID【' . $PayerID . '】';die;
         }
         echo 'Payment Success，Payment ID【' . $paymentId . '】,Payer ID【' . $PayerID . '】';die;
+    }
+
+    public function index(){
+
+        return view('welcomesave');
     }
 }

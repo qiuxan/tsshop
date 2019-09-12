@@ -59,3 +59,4 @@ Route::get('products/{product}', 'ProductsController@show')->name('products.show
 
 Route::get('pay', 'paypalController@pay');
 Route::get('callback', 'paypalController@callback');
+Route::get('paypal', 'paypalController@index');
