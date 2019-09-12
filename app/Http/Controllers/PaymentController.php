@@ -19,9 +19,10 @@ use PayPal\Rest\ApiContext;
 use Redirect;
 use Session;
 use URL;
+//use Config;
 
-class PaymentController extends Controller
-{
+class PaymentController extends Controller{
+
     private $_api_context;
     /**
      * Create a new controller instance.
@@ -32,7 +33,7 @@ class PaymentController extends Controller
     {
 
         /** PayPal api context **/
-        $paypal_conf = \Config::get('paypal');
+        $paypal_conf = config('paypal');
         $this->_api_context = new ApiContext(new OAuthTokenCredential(
                 $paypal_conf['client_id'],
                 $paypal_conf['secret'])
@@ -40,8 +41,11 @@ class PaymentController extends Controller
         $this->_api_context->setConfig($paypal_conf['settings']);
 
     }
+
     public function index()
     {
+
+//        dd(config('paypal'));
         return view('paywithpaypal');
     }
     public function payWithpaypal(Request $request)
@@ -157,5 +161,6 @@ class PaymentController extends Controller
         return Redirect::to('/');
 
     }
+
 
 }

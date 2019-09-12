@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8a53771-109d-4420-a80f-2f6eeb9a264e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/config/paypal.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcomesave.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcomesave.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/paypalController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/paypalController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcomesave.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,44 +32,44 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cross-env" value="1" />
-          <entry key="env" value="7" />
+          <entry key="env" value="8" />
           <entry key="gitignore" value="5" />
           <entry key="js" value="3" />
           <entry key="json" value="6" />
           <entry key="log" value="3" />
           <entry key="md" value="1" />
-          <entry key="php" value="188" />
+          <entry key="php" value="198" />
           <entry key="scss" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key=".env file" value="7" />
-          <entry key="Blade" value="45" />
+          <entry key=".env file" value="8" />
+          <entry key="Blade" value="48" />
           <entry key="JSON" value="6" />
           <entry key="JavaScript" value="3" />
           <entry key="Markdown" value="1" />
-          <entry key="PHP" value="143" />
+          <entry key="PHP" value="150" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="SCSS" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="env" value="46" />
+          <entry key="env" value="49" />
           <entry key="js" value="15" />
           <entry key="json" value="31" />
-          <entry key="php" value="8421" />
+          <entry key="php" value="8643" />
           <entry key="scss" value="94" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key=".env file" value="46" />
-          <entry key="Blade" value="2966" />
+          <entry key=".env file" value="49" />
+          <entry key="Blade" value="2991" />
           <entry key="JSON" value="31" />
           <entry key="JavaScript" value="15" />
-          <entry key="PHP" value="5455" />
+          <entry key="PHP" value="5652" />
           <entry key="SCSS" value="94" />
         </counts>
       </usages-collector>
@@ -73,62 +77,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="27" column="31" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Policies/UserAddressPolicy.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
-              <folding>
-                <element signature="e#33#69#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/paypalController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
-              <folding>
-                <element signature="e#40#68#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/welcomesave.blade.php">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="71" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
+            <state relative-caret-position="446">
+              <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+              <folding>
+                <element signature="e#7#389#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PaymentController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2274">
+              <caret line="165" column="1" lean-forward="true" selection-start-line="165" selection-start-column="1" selection-end-line="165" selection-end-column="1" />
+              <folding>
+                <element signature="e#39#67#0#PHP" expanded="true" />
+                <element signature="e#208#232#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/paypal.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/admin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -136,8 +128,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+            <state relative-caret-position="680">
+              <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -145,28 +137,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1364">
-              <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
+            <state relative-caret-position="-222">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/paypal/rest-api-sdk-php/lib/PayPal/Api/Currency.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/paywithpaypal.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="909">
-              <caret line="61" column="37" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+            <state relative-caret-position="680">
+              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
               <folding>
-                <element signature="e#7#389#0#PHP" expanded="true" />
+                <element signature="e#380#387#1#HTML" expanded="true" />
+                <element signature="e#744#751#1#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -183,9 +167,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>remember</find>
-      <find>admin_base_path</find>
-      <find>file</find>
       <find>edit</find>
       <find>top</find>
       <find>scriptsAfterJs</find>
@@ -210,9 +191,12 @@
       <find>skuIds</find>
       <find>index</find>
       <find>cartService</find>
-      <find>00b5ad</find>
       <find>clientSecret</find>
       <find>prs</find>
+      <find>00b5ad</find>
+      <find>addmoney</find>
+      <find>form</find>
+      <find>settings</find>
     </findStrings>
     <replaceStrings>
       <replace>app/Models/User.php</replace>
@@ -228,10 +212,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Admin/routes.php" />
-        <option value="$PROJECT_DIR$/app/Models/Product.php" />
-        <option value="$PROJECT_DIR$/database/factories/ProductFactory.php" />
-        <option value="$PROJECT_DIR$/database/factories/ProductSkuFactory.php" />
         <option value="$PROJECT_DIR$/database/seeds/ProductsSeeder.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/products/index.blade.php" />
@@ -275,10 +255,14 @@
         <option value="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UserAddressesController.php" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/paypalController.php" />
         <option value="$PROJECT_DIR$/resources/views/welcomesave.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/paypalController.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/config/paypal.php" />
+        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/paywithpaypal.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
       </list>
     </option>
   </component>
@@ -391,9 +375,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1123" />
-    <option name="y" value="55" />
-    <option name="width" value="1405" />
+    <option name="x" value="888" />
+    <option name="y" value="126" />
+    <option name="width" value="1232" />
     <option name="height" value="1314" />
   </component>
   <component name="ProjectView">
@@ -412,7 +396,7 @@
             <path>
               <item name="ts-shop" type="b2602c69:ProjectViewProjectNode" />
               <item name="ts-shop" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ts-shop" type="b2602c69:ProjectViewProjectNode" />
@@ -425,11 +409,6 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ts-shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ts-shop" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -437,7 +416,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value=".e&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/.env&#10;welcom&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/welcome.blade.php&#10;paypalController &#9;null&#9;null&#10;web&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/routes/web.php&#10;Useraddress&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/UserAddressesController.php&#10;user&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Requests/UserAddressRequest.php&#10;UserAddressPolicy&#9;null&#9;null&#10;css&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/sass/app.scss&#10;orders&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;or&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;ca&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/CartController.php&#10;OrdersController&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;orderc&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;index&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/orders/index.blade.php&#10;show&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/orders/show.blade.php&#10;we&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/routes/web.php&#10;order&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;he&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/layouts/_header.blade.php&#10;CloseOrder&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Jobs/CloseOrder.php&#10;ind&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/cart/index.blade.php&#10;ProductSku&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Models/ProductSku.php&#10;OrderRequest&#9;null&#9;null&#10;cart&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/CartController.php&#10;sho&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/show.blade.php&#10;hea&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/layouts/_header.blade.php&#10;con&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/CartController.php&#10;sh&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/show.blade.php&#10;rout&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Admin/routes.php&#10;_header&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/layouts/_header.blade.php&#10;app&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/sass/app.scss&#10;favorites&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/favorites.blade.php&#10;produ&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;userA&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/UserAddressesController.php&#10;resour&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources&#10;PRODUCTS&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;USER.PHP&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Models/User.php&#10;WE&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/routes/web.php&#10;product c&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;Product co&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;log&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/storage/logs&#10;products-show-page&#9;null&#9;null&#10;Pr&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;product&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;pro&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;fac&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/database/factories&#10;inde&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/index.blade.php&#10;.en&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/.env&#10;admin\login&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/vendor/encore/laravel-admin/resources/views/login.blade.php&#10;Encore\Admin\Layout\Column&#9;null&#9;null&#10;admin/auth/login&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="auto&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/vendor/autoload.php&#10;.e&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/.env&#10;welcom&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/welcome.blade.php&#10;paypalController &#9;null&#9;null&#10;web&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/routes/web.php&#10;Useraddress&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/UserAddressesController.php&#10;user&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Requests/UserAddressRequest.php&#10;UserAddressPolicy&#9;null&#9;null&#10;css&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/sass/app.scss&#10;orders&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;or&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;ca&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/CartController.php&#10;OrdersController&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;orderc&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;index&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/orders/index.blade.php&#10;show&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/orders/show.blade.php&#10;we&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/routes/web.php&#10;order&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/OrdersController.php&#10;he&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/layouts/_header.blade.php&#10;CloseOrder&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Jobs/CloseOrder.php&#10;ind&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/cart/index.blade.php&#10;ProductSku&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Models/ProductSku.php&#10;OrderRequest&#9;null&#9;null&#10;cart&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/CartController.php&#10;sho&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/show.blade.php&#10;hea&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/layouts/_header.blade.php&#10;con&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/CartController.php&#10;sh&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/show.blade.php&#10;rout&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Admin/routes.php&#10;_header&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/layouts/_header.blade.php&#10;app&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/sass/app.scss&#10;favorites&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/favorites.blade.php&#10;produ&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;userA&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/UserAddressesController.php&#10;resour&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources&#10;PRODUCTS&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;USER.PHP&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Models/User.php&#10;WE&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/routes/web.php&#10;product c&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;Product co&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;log&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/storage/logs&#10;products-show-page&#9;null&#9;null&#10;Pr&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;product&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;pro&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/app/Http/Controllers/ProductsController.php&#10;fac&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/database/factories&#10;inde&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/resources/views/products/index.blade.php&#10;.en&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/.env&#10;admin\login&#9;FILE&#9;file:///Users/xianqiu/Code/ts-shop/vendor/encore/laravel-admin/resources/views/login.blade.php&#10;Encore\Admin\Layout\Column&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -481,19 +460,19 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90700000" />
+    <option name="totallyTimeSpent" value="94585000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1123" y="55" width="1405" height="1314" extended-state="0" />
+    <frame x="888" y="126" width="1232" height="1314" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11885547" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24033614" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.109656304" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3207856" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -502,7 +481,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.333795" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33306056" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -516,54 +495,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/user_addresses/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="59" column="40" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Exceptions/InternalException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-          <folding>
-            <element signature="e#34#48#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
-          <folding>
-            <element signature="e#40#83#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/products/favorites.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_09_010440_create_user_addresses_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="18" column="91" selection-start-line="18" selection-start-column="91" selection-end-line="18" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
@@ -801,20 +732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="27" column="31" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Policies/UserAddressPolicy.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/UserAddressRequest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
@@ -839,6 +756,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cross-env">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="704">
@@ -849,23 +776,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cross-env">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/app/Policies/UserAddressPolicy.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="909">
-          <caret line="61" column="37" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
-          <folding>
-            <element signature="e#7#389#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="88">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        <state relative-caret-position="254">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -876,34 +797,91 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/welcomesave.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/paypalController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
+        <state relative-caret-position="-870">
+          <caret line="92" column="19" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="19" />
           <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
+            <element signature="e#39#67#0#PHP" expanded="true" />
+            <element signature="e#208#232#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/paypal/rest-api-sdk-php/lib/PayPal/Api/Item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/paywithpaypal.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="e#380#387#1#HTML" expanded="true" />
+            <element signature="e#744#751#1#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1364">
-          <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
+        <state relative-caret-position="-222">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+        <state relative-caret-position="680">
+          <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcomesave.blade.php">
+    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="71" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
+        <state relative-caret-position="428">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/paypal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PaymentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2274">
+          <caret line="165" column="1" lean-forward="true" selection-start-line="165" selection-start-column="1" selection-end-line="165" selection-end-column="1" />
+          <folding>
+            <element signature="e#39#67#0#PHP" expanded="true" />
+            <element signature="e#208#232#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+          <folding>
+            <element signature="e#7#389#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
