@@ -7,6 +7,31 @@
             <div class="card">
                 <div class="card-header">Order List</div>
                 <div class="card-body">
+
+                    @if(session()->has('success'))
+                        <div class="alert alert-success">
+                            {{session()->get('success')}}
+                        </div>
+
+                        @if(session()->has('payment_id'))
+                            <div class="alert alert-success">
+                                Payment ID: {{session()->get('payment_id')}}
+                            </div>
+                        @endif
+                    @endif
+
+                    @if(session()->has('error'))
+                        <div class="alert alert-danger">
+                            {{session()->get('error')}}
+                        </div>
+                        @if(session()->has('payment_id'))
+                            <div class="alert alert-danger">
+                                Payment ID: {{session()->get('payment_id')}}
+                            </div>
+                        @endif
+                    @endif
+
+
                     <ul class="list-group">
                         @foreach($orders as $order)
                             <li class="list-group-item">

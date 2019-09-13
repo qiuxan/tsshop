@@ -9,6 +9,8 @@
                     <h4>Order Detail</h4>
                 </div>
                 <div class="card-body">
+
+
                     <table class="table">
                         <thead>
                         <tr>
@@ -47,7 +49,7 @@
                             <div class="line"><div class="line-label">Order Number：</div><div class="line-value">{{ $order->no }}</div></div>
                         </div>
                         <div class="order-summary text-right">
-                            <div class="total-amount">
+                            <div class="total-amount left">
                                 <span>Amount：</span>
                                 <div class="value">${{ $order->total_amount }}</div>
                             </div>
@@ -66,6 +68,37 @@
                                        Unpaid
                                     @endif
                                 </div>
+                            </div>
+
+                            {{--<div class="btn mr-5 mt-3" style="background-color: #00b5ad;">paypal button</div>--}}
+
+                            <form action="{{route('order.pay')}}" method="post">
+                                <input type="hidden" value="{{$order->total_amount}}" name="total_amount">
+
+                                <input type="hidden" value="{{$order->address['address']}}" name="address">
+
+                                <input type="hidden" value="{{$order->id}}" name="order_id">
+
+
+
+                                <input type="hidden" value="{{$order->address['contact_phone']}}" name="contact_phone">
+
+
+                                {{csrf_field()}}
+
+                                <button role="button" class="mt-2 paypalbutton"  type="submit">
+
+                                    <div class="paypal-btn-content mt-2 mr-"> <span class="">Pay with </span>
+                                        <img src="/img/paypallogo.svg" alt="PayPal" class="" style=""></div>
+
+
+
+                                </button>
+
+                            </form>
+
+
+
                             </div>
                         </div>
                     </div>

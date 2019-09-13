@@ -70,4 +70,6 @@ Route::post('paypal', 'PaymentController@payWithpaypal');
 // route for check status of the payment
 Route::get('status', 'PaymentController@getPaymentStatus');
 
-Route::get('/callback','PaymentController@callback');
+Route::get('/callback/{id}','PaymentController@callback');
+
+Route::post('pay','PaymentController@getPay')->name('order.pay');

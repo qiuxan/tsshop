@@ -422,3 +422,64 @@ body {
     }
   }
 }
+
+
+.paypalbutton {
+
+
+  img {
+    height: 25px;
+  }
+
+  .paypal-button-text {
+
+    vertical-align: top;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+
+    display: inline-block;
+    white-space: pre-wrap;
+  }
+
+  background: #049cde;
+
+
+  width: 50%;
+  height: 55%;
+
+  color: white;
+
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: none;
+  font-weight: 500;
+
+  border-radius: 15px;
+
+  font-size: 13px;
+
+  position: relative;
+
+  margin-left: 46%;
+
+  box-sizing: border-box;
+  border: none;
+  vertical-align: top;
+  cursor: pointer;
+  overflow: hidden;
+
+  .paypal-button > .paypal-logo {
+    vertical-align: top;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+
+  }
+}
+
+.paypalbutton:hover {
+
+  background: #0593d3;
+}

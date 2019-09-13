@@ -1,11 +1,16 @@
 <?php
 namespace App\Http\Controllers;
 
+use App\Models\Order;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 use PayPal\Api\Amount;
 use PayPal\Api\Details;
 use PayPal\Api\Item;
+use Auth;
+use Illuminate\Support\Facades\DB;
+
 
 /** All Paypal Details class **/
 use PayPal\Api\ItemList;
@@ -26,7 +31,6 @@ class PaymentController extends Controller{
     private $_api_context;
 
     const accept_url = 'http://tsshop.test/callback';//返回地址
-
     /**
      * Create a new controller instance.
      *
@@ -46,7 +50,6 @@ class PaymentController extends Controller{
         $this->_api_context->setConfig($paypal_conf['settings']);
 
     }
-
     public function index()
     {
 
@@ -138,30 +141,42 @@ class PaymentController extends Controller{
 
     }
 
-
-
-    public function Callback()
+    public function Callback($id)
     {
+//        dd($id);
+
+
+
+
+
 
 //        dd(Session);
         $payment_id = Session::get('paypal_payment_id');
 //        dd($payment_id);
-        dd($_GET);
+//        dd($_GET);
+//
         $success = trim($_GET['success']);
 
         if ($success == 'false' && !isset($_GET['paymentId']) && !isset($_GET['PayerID'])) {
-            echo 'Cancel Payment';die;
+//            echo 'Cancel Payment';die;
+
+            session()->flash('error', 'Cancel Payment');
+
         }
 
         $paymentId = trim($_GET['paymentId']);
         $PayerID = trim($_GET['PayerID']);
 
         if (!isset($success, $paymentId, $PayerID)) {
-            echo 'Payment Failed';die;
+//            echo 'Payment Failed';die;
+            session()->flash('error', 'Payment Failed');
+
         }
 
         if ((bool)$_GET['success'] === 'false') {
-            echo  'Payment Failed，Payment ID: ' . $paymentId . ',PayerID:' . $PayerID;die;
+//            echo  'Payment Failed，Payment ID: ' . $paymentId . ',PayerID:' . $PayerID;die;
+            session()->flash('error', 'Payment Failed');
+            session()->flash('payment_id', $paymentId);
         }
 
         $payment = Payment::get($paymentId, $this->_api_context);
@@ -173,12 +188,35 @@ class PaymentController extends Controller{
         try {
             $payment->execute($execute, $this->_api_context);
         } catch (Exception $e) {
-            echo ',Payment Failed，Payment ID: ' . $paymentId . ',Payer ID' . $PayerID;die;
+//            echo ',Payment Failed，Payment ID: ' . $paymentId . ',Payer ID' . $PayerID;die;
+            session()->flash('error', 'Payment Failed');
+            session()->flash('payment_id', $paymentId);
+            session()->flash('payer_id', $PayerID);
         }
-        echo 'Payment success Payment ID:' . $paymentId . '】,Payer ID' . $PayerID ;die;
+//        echo 'Payment success Payment ID:' . $paymentId . '】,Payer ID' . $PayerID ;die;
+        session()->flash('success', 'Payment Success');
+        session()->flash('payment_id', $paymentId);
+        session()->flash('payer_id', $PayerID);
+
+//        $order = DB::table('orders')->where('id', $id)->first();
+//        dd($order->address);
+        $order = Order::where('id', $id)->first();
+        $order->update([
+            'paid_at'        => Carbon::now(), // 支付时间
+            'payment_method' => 'paypal', // 支付方式
+            'payment_no'=>$paymentId
+        ]);
+
+
+
+
+
+
+
+        return redirect(route('orders.index'));
+
+
     }
-
-
     public function getPaymentStatus()
     {
         /** Get the payment ID before session clear **/
@@ -211,4 +249,96 @@ class PaymentController extends Controller{
         return Redirect::to('/');
 
     }
+
+
+    public function getPay(Request $request)
+    {
+
+//        return ($request);
+
+        $payer = new Payer();
+        $payer->setPaymentMethod('paypal');
+
+        $item_1 = new Item();
+
+        $item_1->setName('Item 1') /** item name **/
+        ->setCurrency('AUD')
+            ->setQuantity(1)
+            ->setPrice($request->get('total_amount')); /** unit price **/
+
+        $item_list = new ItemList();
+        $item_list->setItems(array($item_1));
+
+        $amount = new Amount();
+        $amount->setCurrency('AUD')
+            ->setTotal($request->get('total_amount'));
+
+        $transaction = new Transaction();
+        $transaction->setAmount($amount)
+            ->setItemList($item_list)
+            ->setDescription('Your transaction description');
+
+        $redirect_urls = new RedirectUrls();
+//        $redirect_urls->setReturnUrl(URL::to('status')) /** Specify return URL **/
+//        ->setCancelUrl(URL::to('status'));
+
+        $redirect_urls->setReturnUrl(self::accept_url . '/'.$request->order_id.'?success=true')->setCancelUrl(self::accept_url . '/?success=false');
+
+        $payment = new Payment();
+        $payment->setIntent('Sale')
+            ->setPayer($payer)
+            ->setRedirectUrls($redirect_urls)
+            ->setTransactions(array($transaction));
+        /** dd($payment->create($this->_api_context));exit; **/
+        try {
+
+            $payment->create($this->_api_context);
+
+        } catch (\PayPal\Exception\PPConnectionException $ex) {
+
+            if (\Config::get('app.debug')) {
+
+                \Session::put('error', 'Connection timeout');
+                return Redirect::to('/');
+
+            } else {
+
+                \Session::put('error', 'Some error occur, sorry for inconvenient');
+                return Redirect::to('/');
+
+            }
+
+        }
+
+        foreach ($payment->getLinks() as $link) {
+
+            if ($link->getRel() == 'approval_url') {
+
+                $redirect_url = $link->getHref();
+                break;
+
+            }
+
+        }
+
+        /** add payment ID to session **/
+        Session::put('paypal_payment_id', $payment->getId());
+
+        if (isset($redirect_url)) {
+
+            /** redirect to paypal **/
+            return Redirect::away($redirect_url);
+
+        }
+
+        Session::put('error', 'Unknown error occurred');
+        return Redirect::to('/');
+
+
+
+            return ($request);
+//        return Auth::user(); //this user info.
+
+    }
+
 }

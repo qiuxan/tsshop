@@ -9,6 +9,24 @@
     <title>@yield('title', 'Touch Screen Shop') - Touch Screen Shop</title>
     <!-- Style -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <style>
+        /* Media query for mobile viewport */
+        @media screen and (max-width: 400px) {
+            #paypal-button-container {
+                width: 100%;
+            }
+        }
+
+        /* Media query for desktop viewport */
+        @media screen and (min-width: 400px) {
+            #paypal-button-container {
+                width: 250px;
+            }
+        }
+    </style>
+
+
 </head>
 <body>
 <div id="app" class="{{ route_class() }}-page">
