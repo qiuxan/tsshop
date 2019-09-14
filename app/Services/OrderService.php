@@ -42,17 +42,21 @@ class OrderService
                 $item = $order->items()->make([
                     'amount' => $data['amount'],
                     'price'  => $sku->price,
+
                 ]);
                 $item->product()->associate($sku->product_id);
                 $item->productSku()->associate($sku);
                 $item->save();
                 $totalAmount += $sku->price * $data['amount'];
                 if ($sku->decreaseStock($data['amount']) <= 0) {
-                    throw new InvalidRequestException('该商品库存不足');
+                    throw new InvalidRequestException('Not enough storage');
                 }
             }
             //
-            $order->update(['total_amount' => $totalAmount]);
+            $order->update([
+                'total_amount' => $totalAmount,
+                'closed'=>0
+            ]);
 
             //
             $skuIds = collect($items)->pluck('sku_id')->all();
