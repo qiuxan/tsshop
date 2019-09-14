@@ -71,8 +71,9 @@
                             </div>
 
                             {{--<div class="btn mr-5 mt-3" style="background-color: #00b5ad;">paypal button</div>--}}
+                            @if(!$order->paid_at)
 
-                            <form action="{{route('order.pay')}}" method="post">
+                                 <form action="{{route('order.pay')}}" method="post">
                                 <input type="hidden" value="{{$order->total_amount}}" name="total_amount">
 
                                 <input type="hidden" value="{{$order->address['address']}}" name="address">
@@ -96,6 +97,7 @@
                                 </button>
 
                             </form>
+                            @endif
 
 
 

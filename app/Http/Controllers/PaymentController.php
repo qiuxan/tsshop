@@ -141,7 +141,7 @@ class PaymentController extends Controller{
 
     }
 
-    public function Callback($id)
+    public function callback($id)
     {
 //        dd($id);
 
