@@ -30,7 +30,7 @@ class PaymentController extends Controller{
 
     private $_api_context;
 
-    const accept_url = 'http://tsshop.test/callback';//返回地址
+//     $accept_url = 'http://tsshop.test/callback';//返回地址
     /**
      * Create a new controller instance.
      *
@@ -61,6 +61,9 @@ class PaymentController extends Controller{
     public function payWithpaypal(Request $request)
     {
 
+
+        $accept_url = $_ENV('APP_URL').'/callback';//返回地址
+
         $payer = new Payer();
         $payer->setPaymentMethod('paypal');
 
@@ -87,7 +90,7 @@ class PaymentController extends Controller{
 //        $redirect_urls->setReturnUrl(URL::to('status')) /** Specify return URL **/
 //        ->setCancelUrl(URL::to('status'));
 
-        $redirect_urls->setReturnUrl(self::accept_url . '?success=true')->setCancelUrl(self::accept_url . '/?success=false');
+        $redirect_urls->setReturnUrl($accept_url . '?success=true')->setCancelUrl($accept_url . '/?success=false');
 
         $payment = new Payment();
         $payment->setIntent('Sale')
@@ -143,7 +146,7 @@ class PaymentController extends Controller{
 
     public function callback($id)
     {
-        dd($id);
+//        dd($id);
 
 
 
@@ -201,6 +204,8 @@ class PaymentController extends Controller{
 //        $order = DB::table('orders')->where('id', $id)->first();
 //        dd($order->address);
         $order = Order::where('id', $id)->first();
+
+//        dd($order);
         $order->update([
             'paid_at'        => Carbon::now(), // 支付时间
             'payment_method' => 'paypal', // 支付方式
@@ -253,6 +258,11 @@ class PaymentController extends Controller{
 
     public function getPay(Request $request)
     {
+//        dd(env('APP_URL'));
+
+        $accept_url = $_ENV['APP_URL'].'/callback';
+
+//        dd($_ENV['APP_URL']);
 
 //        return ($request);
 
@@ -282,7 +292,7 @@ class PaymentController extends Controller{
 //        $redirect_urls->setReturnUrl(URL::to('status')) /** Specify return URL **/
 //        ->setCancelUrl(URL::to('status'));
 
-        $redirect_urls->setReturnUrl(self::accept_url . '/'.$request->order_id.'?success=true')->setCancelUrl(self::accept_url . '/?success=false');
+        $redirect_urls->setReturnUrl($accept_url . '/'.$request->order_id.'?success=true')->setCancelUrl($accept_url . '/?success=false');
 
         $payment = new Payment();
         $payment->setIntent('Sale')
