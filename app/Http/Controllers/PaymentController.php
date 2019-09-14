@@ -62,7 +62,7 @@ class PaymentController extends Controller{
     {
 
 
-        $accept_url = $_ENV('APP_URL').'/callback';//返回地址
+       $accept_url = config('paypal');//返回地址
 
         $payer = new Payer();
         $payer->setPaymentMethod('paypal');
@@ -260,7 +260,10 @@ class PaymentController extends Controller{
     {
 //        dd(env('APP_URL'));
 
-        $accept_url = $_ENV['APP_URL'].'/callback';
+//        dd(config('paypal')['accept_url']);
+
+
+        $accept_url = config('paypal')['accept_url'];
 
 //        dd($_ENV['APP_URL']);
 

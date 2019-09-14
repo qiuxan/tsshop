@@ -4,6 +4,7 @@
     <list default="true" id="d8a53771-109d-4420-a80f-2f6eeb9a264e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/paypal.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/paypal.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +35,7 @@
           <entry key="json" value="6" />
           <entry key="log" value="3" />
           <entry key="md" value="1" />
-          <entry key="php" value="224" />
+          <entry key="php" value="225" />
           <entry key="scss" value="9" />
         </counts>
       </usages-collector>
@@ -45,7 +46,7 @@
           <entry key="JSON" value="6" />
           <entry key="JavaScript" value="3" />
           <entry key="Markdown" value="1" />
-          <entry key="PHP" value="172" />
+          <entry key="PHP" value="173" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="SCSS" value="9" />
         </counts>
@@ -55,7 +56,7 @@
           <entry key="env" value="49" />
           <entry key="js" value="15" />
           <entry key="json" value="31" />
-          <entry key="php" value="9997" />
+          <entry key="php" value="10053" />
           <entry key="scss" value="199" />
         </counts>
       </usages-collector>
@@ -65,7 +66,7 @@
           <entry key="Blade" value="3456" />
           <entry key="JSON" value="31" />
           <entry key="JavaScript" value="15" />
-          <entry key="PHP" value="6541" />
+          <entry key="PHP" value="6597" />
           <entry key="SCSS" value="199" />
         </counts>
       </usages-collector>
@@ -73,16 +74,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PaymentController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="261" column="8" selection-start-line="261" selection-start-column="8" selection-end-line="261" selection-end-column="8" />
+            <state relative-caret-position="250">
+              <caret line="252" column="44" selection-start-line="252" selection-start-column="44" selection-end-line="252" selection-end-column="44" />
               <folding>
                 <element signature="e#39#60#0#PHP" expanded="true" />
+                <element signature="e#295#319#0#PHP" expanded="true" />
                 <element signature="e#1295#3639#0#PHP" />
-                <marker date="1568435611590" expanded="true" signature="1233:1246" ph="..." />
+                <marker date="1568438275935" expanded="true" signature="1233:1246" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/paypal.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -119,9 +130,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>primary</find>
-      <find>/table</find>
-      <find>skuIds</find>
       <find>index</find>
       <find>cartService</find>
       <find>clientSecret</find>
@@ -137,7 +145,6 @@
       <find>order-summary</find>
       <find>status</find>
       <find>REFUND_STATUS_PENDING</find>
-      <find>getpay</find>
       <find>$request</find>
       <find>setA</find>
       <find>payer</find>
@@ -149,6 +156,10 @@
       <find>DB</find>
       <find>callback</find>
       <find>accept_url</find>
+      <find>env</find>
+      <find>Env</find>
+      <find>config</find>
+      <find>getpay</find>
     </findStrings>
     <replaceStrings>
       <replace>app/Models/User.php</replace>
@@ -205,7 +216,6 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/resources/views/welcomesave.blade.php" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/config/paypal.php" />
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/paypalController.php" />
         <option value="$PROJECT_DIR$/resources/views/paywithpaypal.blade.php" />
@@ -215,6 +225,7 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/orders/show.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" />
+        <option value="$PROJECT_DIR$/config/paypal.php" />
       </list>
     </option>
   </component>
@@ -327,9 +338,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="502" />
-    <option name="y" value="48" />
-    <option name="width" value="1859" />
+    <option name="x" value="32" />
+    <option name="y" value="55" />
+    <option name="width" value="1232" />
     <option name="height" value="1314" />
   </component>
   <component name="ProjectView">
@@ -365,9 +376,7 @@
             <path>
               <item name="ts-shop" type="b2602c69:ProjectViewProjectNode" />
               <item name="ts-shop" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Requests" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ts-shop" type="b2602c69:ProjectViewProjectNode" />
@@ -442,18 +451,18 @@
       <workItem from="1567846615462" duration="8956000" />
       <workItem from="1567978285490" duration="67300000" />
       <workItem from="1568409074758" duration="712000" />
-      <workItem from="1568429287154" duration="3318000" />
+      <workItem from="1568429287154" duration="4699000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120571000" />
+    <option name="totallyTimeSpent" value="121952000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="502" y="48" width="1859" height="1314" extended-state="0" />
+    <frame x="32" y="55" width="1232" height="1314" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12658228" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19327731" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -653,13 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/paypal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
@@ -831,13 +833,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PaymentController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="261" column="8" selection-start-line="261" selection-start-column="8" selection-end-line="261" selection-end-column="8" />
+        <state relative-caret-position="250">
+          <caret line="252" column="44" selection-start-line="252" selection-start-column="44" selection-end-line="252" selection-end-column="44" />
           <folding>
             <element signature="e#39#60#0#PHP" expanded="true" />
+            <element signature="e#295#319#0#PHP" expanded="true" />
             <element signature="e#1295#3639#0#PHP" />
-            <marker date="1568435611590" expanded="true" signature="1233:1246" ph="..." />
+            <marker date="1568438275935" expanded="true" signature="1233:1246" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/paypal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
         </state>
       </provider>
     </entry>

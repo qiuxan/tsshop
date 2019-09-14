@@ -9,6 +9,7 @@
 return [
     'client_id' => env('PAYPAL_CLIENT_ID',''),
     'secret' => env('PAYPAL_SECRET',''),
+    'accept_url'=>env('APP_URL').'/callback',
     'settings' => array(
         'mode' => env('PAYPAL_MODE','sandbox'),
         'http.ConnectionTimeOut' => 30,
