@@ -2,6 +2,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Order;
+use App\Models\Product;
+use App\Models\ProductSku;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
@@ -30,7 +32,6 @@ class PaymentController extends Controller{
 
     private $_api_context;
 
-//     $accept_url = 'http://tsshop.test/callback';//返回地址
     /**
      * Create a new controller instance.
      *
@@ -146,22 +147,10 @@ class PaymentController extends Controller{
 
     public function callback($id)
     {
-//        dd($id);
 
-
-
-
-
-
-//        dd(Session);
-        $payment_id = Session::get('paypal_payment_id');
-//        dd($payment_id);
-//        dd($_GET);
-//
         $success = trim($_GET['success']);
 
         if ($success == 'false' && !isset($_GET['paymentId']) && !isset($_GET['PayerID'])) {
-//            echo 'Cancel Payment';die;
 
             session()->flash('error', 'Cancel Payment');
 
@@ -171,13 +160,11 @@ class PaymentController extends Controller{
         $PayerID = trim($_GET['PayerID']);
 
         if (!isset($success, $paymentId, $PayerID)) {
-//            echo 'Payment Failed';die;
             session()->flash('error', 'Payment Failed');
 
         }
 
         if ((bool)$_GET['success'] === 'false') {
-//            echo  'Payment Failed，Payment ID: ' . $paymentId . ',PayerID:' . $PayerID;die;
             session()->flash('error', 'Payment Failed');
             session()->flash('payment_id', $paymentId);
         }
@@ -191,32 +178,38 @@ class PaymentController extends Controller{
         try {
             $payment->execute($execute, $this->_api_context);
         } catch (Exception $e) {
-//            echo ',Payment Failed，Payment ID: ' . $paymentId . ',Payer ID' . $PayerID;die;
             session()->flash('error', 'Payment Failed');
             session()->flash('payment_id', $paymentId);
             session()->flash('payer_id', $PayerID);
         }
-//        echo 'Payment success Payment ID:' . $paymentId . '】,Payer ID' . $PayerID ;die;
         session()->flash('success', 'Payment Success');
         session()->flash('payment_id', $paymentId);
         session()->flash('payer_id', $PayerID);
 
-//        $order = DB::table('orders')->where('id', $id)->first();
-//        dd($order->address);
         $order = Order::where('id', $id)->first();
 
-//        dd($order);
         $order->update([
-            'paid_at'        => Carbon::now(), // 支付时间
-            'payment_method' => 'paypal', // 支付方式
+            'paid_at'        => Carbon::now(),
+            'payment_method' => 'paypal',
             'payment_no'=>$paymentId
         ]);
 
+        $order_items=Order::find($id)->items()->get();
 
 
+        foreach ($order_items as $key => $value) {
 
 
+            $product_id=ProductSku::where('id', $value['product_sku_id'])->first()->product_id;
 
+            $product=Product::where('id',$product_id)->first();
+
+            $product->update([
+                'sold_count'=>$product->sold_count+$value['amount'],
+
+            ]);
+
+        }
 
         return redirect(route('orders.index'));
 
