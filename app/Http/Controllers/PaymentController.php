@@ -143,7 +143,7 @@ class PaymentController extends Controller{
 
     public function callback($id)
     {
-//        dd($id);
+        dd($id);
 
 
 
