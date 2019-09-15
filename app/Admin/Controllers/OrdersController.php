@@ -11,6 +11,9 @@ use Encore\Admin\Layout\Content;
 use Encore\Admin\Show;
 use Illuminate\Http\Request;
 use App\Exceptions\InvalidRequestException;
+use Carbon\Carbon;
+use App\Http\Requests\SendReviewRequest;
+
 
 class OrdersController extends Controller
 {
@@ -191,6 +194,39 @@ class OrdersController extends Controller
             'ship_status' => Order::SHIP_STATUS_DELIVERED,
             'ship_data'   => $data,
         ]);
+
+        return redirect()->back();
+    }
+
+
+
+    public function sendReview(Order $order, SendReviewRequest $request)
+    {
+        // 校验权限
+        $this->authorize('own', $order);
+        if (!$order->paid_at) {
+            throw new InvalidRequestException('该订单未支付，不可评价');
+        }
+        // 判断是否已经评价
+        if ($order->reviewed) {
+            throw new InvalidRequestException('该订单已评价，不可重复提交');
+        }
+        $reviews = $request->input('reviews');
+        // 开启事务
+        \DB::transaction(function () use ($reviews, $order) {
+            // 遍历用户提交的数据
+            foreach ($reviews as $review) {
+                $orderItem = $order->items()->find($review['id']);
+                // 保存评分和评价
+                $orderItem->update([
+                    'rating'      => $review['rating'],
+                    'review'      => $review['review'],
+                    'reviewed_at' => Carbon::now(),
+                ]);
+            }
+            // 将订单标记为已评价
+            $order->update(['reviewed' => true]);
+        });
 
         return redirect()->back();
     }

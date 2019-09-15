@@ -46,7 +46,18 @@
                         <div class="order-info">
                             <div class="line"><div class="line-label">Address：</div><div class="line-value">{{ join(' ', $order->address) }}</div></div>
                             <div class="line"><div class="line-label">Note：</div><div class="line-value">{{ $order->remark ?: '-' }}</div></div>
-                            <div class="line"><div class="line-label">Order Number：</div><div class="line-value">{{ $order->no }}</div></div>
+                            <div class="line"><div class="line-label">OrderNumber: </div><div class="line-value">{{ $order->no }}</div></div>
+
+                            <div class="line">
+                                <div class="line-label">OrderStatus：</div>
+                                <div class="line-value">{{ \App\Models\Order::$shipStatusMap[$order->ship_status] }}</div>
+                            </div>
+                            @if($order->ship_data)
+                                <div class="line">
+                                    <div class="line-label">Courier Info：</div>
+                                    <div class="line-value">{{ $order->ship_data['express_company'] }} {{ $order->ship_data['express_no'] }}</div>
+                                </div>
+                            @endif
                         </div>
                         <div class="order-summary text-right">
                             <div class="total-amount left">
