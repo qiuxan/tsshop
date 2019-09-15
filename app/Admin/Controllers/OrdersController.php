@@ -9,6 +9,8 @@ use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Layout\Content;
 use Encore\Admin\Show;
+use Illuminate\Http\Request;
+use App\Exceptions\InvalidRequestException;
 
 class OrdersController extends Controller
 {
@@ -167,5 +169,29 @@ class OrdersController extends Controller
         $form->textarea('extra', 'Extra');
 
         return $form;
+    }
+
+
+    public function ship(Order $order, Request $request)
+    {
+        if (!$order->paid_at) {
+            throw new InvalidRequestException('Order Not Paid');
+        }
+        if ($order->ship_status !== Order::SHIP_STATUS_PENDING) {
+            throw new InvalidRequestException('Order Shipped');
+        }
+        $data = $this->validate($request, [
+            'express_company' => ['required'],
+            'express_no'      => ['required'],
+        ], [], [
+            'express_company' => 'Courier',
+            'express_no'      => 'Tracking number',
+        ]);
+        $order->update([
+            'ship_status' => Order::SHIP_STATUS_DELIVERED,
+            'ship_data'   => $data,
+        ]);
+
+        return redirect()->back();
     }
 }
